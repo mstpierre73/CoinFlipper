@@ -1,0 +1,11 @@
+.CoinComponent {
+    width: 500px;
+    height: auto;
+    margin: 25px auto;
+    display: block;
+}
+
+.coinImg {
+    width: 300px;
+    height: auto;
+}

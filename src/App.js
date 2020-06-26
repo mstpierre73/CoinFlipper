@@ -1,11 +1,11 @@
 import React from 'react';
-import FlipperContainer from './FlipperContainer/FlipperContainer'
+import FlipperContainerColt from './FlipperContainer/FlipperContainerColt'
 import './App.css';   
 
 function App() {
   return (
     <div className="App">
-      <FlipperContainer />
+      <FlipperContainerColt />
     </div>
   );
 }

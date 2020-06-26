@@ -13,19 +13,13 @@ class FlipperContainer extends React.Component {
     }
 
     handleClick = () => {
-        console.log('onClick', this.state.faceToDisplay)
-        this.setCounter();
-    }
-
-    setCounter = () => {
-        this.setState({count: this.state.count + 1});
-        this.setState({faceToDisplay : !this.state.faceToDisplay});
+        this.setState(currentState => {return {count: currentState.count + 1}});
+        this.setState(currentState => {return {faceToDisplay : !currentState.faceToDisplay}});
         if (this.state.faceToDisplay) {
-            this.setState({headCount: this.state.headCount +1});
+            this.setState(currentState => {return {headCount: currentState.headCount + 1}});
         } else {
-            this.setState({tailCount: this.state.tailCount +1});
+            this.setState(currentState => {return {tailCount: currentState.tailCount + 1}});
         }
-        console.log('setCounter', this.state.faceToDisplay);
     }
 
     render(){

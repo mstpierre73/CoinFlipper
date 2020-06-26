@@ -3,7 +3,6 @@ import './CoinComponent.css';
 
 function CoinComponent (props) {
     let img;
-    console.log('coinImg', props.coinValue)
 
     if (props.coinValue) {
         img = <img className='coinImg' src='head2.jpg' alt='coin head or coin tail'/>
